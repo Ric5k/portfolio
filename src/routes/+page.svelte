@@ -1,11 +1,11 @@
 <script>
-	import Footer from "../components/footer.svelte";
+	//import Footer from "../components/footer.svelte";
 
 
     const tagline = "SvelteKit & TypeScript Front-End Specialist";
     const skills = [
-        { title: "Front-End Engineering", description: "Deep expertise in Svelte/SvelteKit, building high-performance, accessible, and reactive user interfaces.", tech: ["SvelteKit", "TypeScript", "Tailwind CSS", "Vite"] },
-        { title: "Design & UX", description: "From low-fidelity wireframes to polished prototypes using Figma, focusing on user-centered design principles.", tech: ["Figma", "User Testing", "A/B Testing"] },
+        { title: "Front-End Engineering", description: "Deep expertise in Svelte/SvelteKit, building high-performance, accessible, and reactive user interfaces.", tech: ["SvelteKit", "TypeScript", "Tailwind CSS"] },
+        { title: "Backend Engineering", description: "From low-fidelity wireframes to polished prototypes using Figma, focusing on user-centered design principles.", tech: ["Rust", "MySQL", "axum"] },
         { title: "Deployment & Infrastructure", description: "Implementing robust CI/CD pipelines (GitHub Actions) and handling deployment via Vercel/Cloudflare Pages.", tech: ["Vercel", "Netlify", "Docker", "CI/CD"] }
     ];
 
@@ -63,15 +63,15 @@
             
             <div class="space-y-12">
                 {#each projects as project}
-                    <div class="group py-4 px-6 -mx-6 transition duration-300 hover:bg-gray-50 rounded-lg border-l-4 border-transparent hover:border-blue-500">
+                    <div class="group py-4 px-6 -mx-6 transition duration-300 hover:bg-yellow-50 rounded-lg border-l-4 border-transparent hover:border-black">
                         <div class="flex justify-between items-start">
                             <div>
-                                <h4 class="text-3xl font-semibold mb-2 group-hover:text-blue-600 transition">
+                                <h4 class="text-3xl font-semibold mb-2 group-hover:text-black transition">
                                     {project.name}
                                 </h4>
                                 <p class="text-lg text-gray-600 mb-3 max-w-4xl">{project.desc}</p>
                             </div>
-                            <a href={project.link} target="_blank" class="text-lg font-medium text-gray-900 group-hover:text-blue-600 ml-8 ">
+                            <a href={project.link} target="_blank" class="text-lg font-medium text-gray-900 group-hover:text-black ml-8 ">
                                 View →
                             </a>
                         </div>
@@ -90,7 +90,5 @@
                 {/each}
             </div>
         </section>
-
     </main>
-    
 </div>
